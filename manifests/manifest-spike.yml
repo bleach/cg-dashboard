@@ -1,0 +1,12 @@
+---
+inherit: manifest-base.yml
+applications:
+- name: cg-dashboard-demo
+  host: dashboard-demo
+  env:
+    CONSOLE_HOSTNAME: https://dashboard-demo.graham.dev.cloudpipelineapps.digital
+    CONSOLE_LOGIN_URL: https://login.graham.dev.cloudpipeline.digital
+    CONSOLE_UAA_URL: https://uaa.graham.dev.cloudpipeline.digital
+    CONSOLE_API_URL: https://api.graham.dev.cloudpipeline.digital
+    CONSOLE_LOG_URL: https://doppler.graham.dev.cloudpipeline.digital
+    LOCAL_CF: true
