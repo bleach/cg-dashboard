@@ -27,7 +27,7 @@ const Header = () => {
             <div className="header__brand">
                 <a href="https://www.cloud.service.gov.uk">
                   <span className="govuk-logo">
-                    <img className="govuk-logo__printable-crown" src="https://www.cloud.service.gov.uk/images/gov.uk_logotype_crown_invert_trans.png" height="32" width="36">
+                    <img className="govuk-logo__printable-crown" src="https://www.cloud.service.gov.uk/images/gov.uk_logotype_crown_invert_trans.png" height="32" width="36"/>
                     GOV.UK
                   </span>
                 <span className="header__title">
