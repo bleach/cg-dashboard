@@ -22,25 +22,25 @@ const Header = () => {
   );
 
   return (
-    <header class="header header--full-width">
-          <div class="header__container">
-            <div class="header__brand">
+    <header className="header header--full-width">
+          <div className="header__container">
+            <div className="header__brand">
                 <a href="https://www.cloud.service.gov.uk">
-                  <span class="govuk-logo">
-                    <img class="govuk-logo__printable-crown" src="/images/gov.uk_logotype_crown_invert_trans.png" height="32" width="36">
+                  <span className="govuk-logo">
+                    <img className="govuk-logo__printable-crown" src="https://www.cloud.service.gov.uk/images/gov.uk_logotype_crown_invert_trans.png" height="32" width="36">
                     GOV.UK
                   </span>
-                <span class="header__title">
+                <span className="header__title">
                   Platform as a Service
-                    <span class="phase-banner">Beta</span>
+                    <span className="phase-banner">Beta</span>
                 </span>
                 </a>
             </div>
 
               <div data-module="navigation">
-                <button type="button" class="header__navigation-toggle js-nav-toggle" aria-controls="navigation" aria-label="Show or hide top level navigation" aria-expanded="true">Menu</button>
+                <button type="button" className="header__navigation-toggle js-nav-toggle" aria-controls="navigation" aria-label="Show or hide top level navigation" aria-expanded="true">Menu</button>
 
-                <nav id="navigation" class="header__navigation js-nav" aria-label="Top Level Navigation" aria-hidden="false">
+                <nav id="navigation" className="header__navigation js-nav" aria-label="Top Level Navigation" aria-hidden="false">
                   <ul>
                       <li>
                         <a href="https://www.cloud.service.gov.uk">
@@ -62,7 +62,7 @@ const Header = () => {
                           Documentation
                         </a>
                       </li>
-                      <li class="active">
+                      <li className="active">
                         <a href="/">
                           Dashboard
                         </a>
