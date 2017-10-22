@@ -1,0 +1,14 @@
+---
+inherit: manifest-base.yml
+applications:
+- name: cg-dashboard-demo
+  host: dev-dashboard-demo
+  env:
+    CONSOLE_HOSTNAME: https://dev-dashboard-demo.graham.dev.cloudpipelineapps.digital
+    CONSOLE_LOGIN_URL: https://login.graham.dev.cloudpipeline.digital
+    CONSOLE_UAA_URL: https://uaa.graham.dev.cloudpipeline.digital
+    CONSOLE_API_URL: https://api.graham.dev.cloudpipeline.digital
+    CONSOLE_LOG_URL: https://doppler.graham.dev.cloudpipeline.digital
+    LOCAL_CF: true
+    CF_SKIN: govuk_paas
+    TEMPLATES_PATH: static_src/skins/govuk_paas/templates
