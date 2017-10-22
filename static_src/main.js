@@ -4,6 +4,7 @@ import './css/main.css';
 import './css/overrides.css';
 // Icon used in cg-uaa.
 import './img/dashboard-uaa-icon.jpg';
+import './img/favicon-govuk.ico';
 import 'cloudgov-style/img/favicon.ico';
 
 import React from 'react';
