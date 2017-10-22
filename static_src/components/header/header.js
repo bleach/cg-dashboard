@@ -22,19 +22,61 @@ const Header = () => {
   );
 
   return (
-    <header className={classNames('header', 'header-no_sidebar')}>
-      <div className="header-wrap">
-        {header.logo.render()}
-        <nav className="header-side">
-          <ul className="nav">
-            {header.links.map((l, i) => (
-              <HeaderLink key={i} url={l.url} text={l.text} />
-            ))}
-            {loginLink}
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <header class="header header--full-width">
+          <div class="header__container">
+            <div class="header__brand">
+                <a href="https://www.cloud.service.gov.uk">
+                  <span class="govuk-logo">
+                    <img class="govuk-logo__printable-crown" src="/images/gov.uk_logotype_crown_invert_trans.png" height="32" width="36">
+                    GOV.UK
+                  </span>
+                <span class="header__title">
+                  Platform as a Service
+                    <span class="phase-banner">Beta</span>
+                </span>
+                </a>
+            </div>
+
+              <div data-module="navigation">
+                <button type="button" class="header__navigation-toggle js-nav-toggle" aria-controls="navigation" aria-label="Show or hide top level navigation" aria-expanded="true">Menu</button>
+
+                <nav id="navigation" class="header__navigation js-nav" aria-label="Top Level Navigation" aria-hidden="false">
+                  <ul>
+                      <li>
+                        <a href="https://www.cloud.service.gov.uk">
+                          About
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.cloud.service.gov.uk/features.html">
+                          Features
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.cloud.service.gov.uk/roadmap.html">
+                          Roadmap
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://docs.cloud.service.gov.uk/">
+                          Documentation
+                        </a>
+                      </li>
+                      <li class="active">
+                        <a href="/">
+                          Dashboard
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.cloud.service.gov.uk/support.html">
+                          Support
+                        </a>
+                      </li>
+                  </ul>
+                </nav>
+              </div>
+          </div>
+        </header>
   );
 };
 
